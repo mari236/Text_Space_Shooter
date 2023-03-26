@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 995140224982760997}
   - component: {fileID: 995140224982760995}
   - component: {fileID: 3913251232017534600}
+  - component: {fileID: 5688631208147726965}
   m_Layer: 0
   m_Name: Meteor
   m_TagString: Untagged
@@ -147,7 +148,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d2b45ef003c42d4b8216f6d7711dbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  spaw: {fileID: 0}
+  health: {fileID: 0}
+  prefab: {fileID: 5877780964438088412, guid: 5d5d03d6be7e1394785949d6d47786fb, type: 3}
 --- !u!114 &3913251232017534600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,4 +163,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f883194beb7ab14eae75eb060e845d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
+  health: 1
+--- !u!114 &5688631208147726965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4096732204412846117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b0ef077ac3f2341afc8b5c8536c625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flySpeed: 0
+  rotSpeed: 0
+  pos: {x: 0, y: 0, z: 0}
+  rot: {x: 0, y: 0, z: 0, w: 0}

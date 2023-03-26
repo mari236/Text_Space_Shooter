@@ -2,19 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Shootin : MonoBehaviour
 {
     public float coolDown;
     public GameObject bulletPrefab;
     public PlayerMovement player;
+ 
+    
+
     
     void Update()
     {
-        coolDown += Time.deltaTime * 0.5f;
+        coolDown += Time.deltaTime;
+       
 
         if(Input.GetKey(KeyCode.Space) && coolDown > 0)
         {  
-            coolDown -= Time.deltaTime;
+            coolDown -= Time.deltaTime * 2 ;
             var pos = player.pos;
             var rot = player.rot;
 
